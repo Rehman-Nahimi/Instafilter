@@ -44,14 +44,15 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    Button("Save"){
-                        //save
-                    }
+                    Button("Save", action: save)
                 }
+                .padding([.horizontal, .bottom])
+                .navigationTitle("Instafilter")
             }
-            .padding([.horizontal, .bottom])
-            .navigationTitle("Instafilter")
         }
+    }
+    func save() {
+        
     }
 }
 
