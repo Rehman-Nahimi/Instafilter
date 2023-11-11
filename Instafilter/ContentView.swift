@@ -50,6 +50,7 @@ struct ContentView: View {
                 }
                 .padding([.horizontal, .bottom])
                 .navigationTitle("Instafilter")
+                .onChange(of: inputImage){_ in loadImage()}
             }
         }
     }
