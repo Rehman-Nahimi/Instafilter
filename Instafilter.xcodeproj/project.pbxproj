@@ -12,6 +12,7 @@
 		E0CB6B822AFFB5BD001C6EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CB6B812AFFB5BD001C6EA2 /* Assets.xcassets */; };
 		E0CB6B852AFFB5BD001C6EA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CB6B842AFFB5BD001C6EA2 /* Preview Assets.xcassets */; };
 		E0CB6B8C2AFFC254001C6EA2 /* imagepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB6B8B2AFFC254001C6EA2 /* imagepicker.swift */; };
+		E0CB6B8E2B017D01001C6EA2 /* Imagesaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB6B8D2B017D01001C6EA2 /* Imagesaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E0CB6B812AFFB5BD001C6EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0CB6B842AFFB5BD001C6EA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0CB6B8B2AFFC254001C6EA2 /* imagepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagepicker.swift; sourceTree = "<group>"; };
+		E0CB6B8D2B017D01001C6EA2 /* Imagesaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagesaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E0CB6B7D2AFFB5BB001C6EA2 /* InstafilterApp.swift */,
 				E0CB6B7F2AFFB5BB001C6EA2 /* ContentView.swift */,
+				E0CB6B8D2B017D01001C6EA2 /* Imagesaver.swift */,
 				E0CB6B8B2AFFC254001C6EA2 /* imagepicker.swift */,
 				E0CB6B812AFFB5BD001C6EA2 /* Assets.xcassets */,
 				E0CB6B832AFFB5BD001C6EA2 /* Preview Content */,
@@ -143,6 +146,7 @@
 				E0CB6B802AFFB5BB001C6EA2 /* ContentView.swift in Sources */,
 				E0CB6B8C2AFFC254001C6EA2 /* imagepicker.swift in Sources */,
 				E0CB6B7E2AFFB5BB001C6EA2 /* InstafilterApp.swift in Sources */,
+				E0CB6B8E2B017D01001C6EA2 /* Imagesaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
