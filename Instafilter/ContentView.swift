@@ -66,6 +66,12 @@ struct ContentView: View {
                 }
                 .confirmationDialog("Select a filter", isPresented: $showingFilterSheet){
                     Button("Crystallize"){seFilter(CIFilter.crystallize())}
+                    Button("Edges"){seFilter(CIFilter.edges())}
+                    Button("Gaussian Blur"){seFilter(CIFilter.gaussianBlur())}
+                    Button("Pixellate"){seFilter(CIFilter.pixellate())}
+                    Button("Sepia Tone"){seFilter(CIFilter.sepiaTone())}
+                    Button("Vignette"){seFilter(CIFilter.vignette())}
+                    Button("Cancel", role: .cancel){}
                 }
             }
         }
