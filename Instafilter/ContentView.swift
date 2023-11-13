@@ -87,7 +87,16 @@ struct ContentView: View {
         
     }
     func applyProcessing() {
-        currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
+        let inputKeys = currentFilter.inputKeys
+        
+        if inputKeys.contains(kCIInputIntensityKey) {
+            currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)}
+        if inputKeys.contains(kCIInputRadiusKey) {
+            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)}
+        if inputKeys.contains(kCIInputScaleKey) {
+            currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey)}
+        
+        
         
         guard let outputImage = currentFilter.outputImage else {return}
         
