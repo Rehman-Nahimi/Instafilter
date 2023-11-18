@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
     
+    @State private var processedImage: UIImage?
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
     
@@ -84,7 +85,10 @@ struct ContentView: View {
         applyProcessing()
     }
     func save() {
+        guard let processedImage = processedImage else {return}
         
+        let imageSaver = ImageSaver()
+        imageSaver.writeToPhotoAlbum(image: processedImage)
     }
     func applyProcessing() {
         let inputKeys = currentFilter.inputKeys
@@ -103,6 +107,7 @@ struct ContentView: View {
         if let  cgimg = context.createCGImage(outputImage, from: outputImage.extent){
             let uiImage = UIImage(cgImage: cgimg)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
     func seFilter(_ filter: CIFilter){
