@@ -88,6 +88,14 @@ struct ContentView: View {
         guard let processedImage = processedImage else {return}
         
         let imageSaver = ImageSaver()
+        
+        imageSaver.successHandler = {
+            print("Success!")
+        }
+        imageSaver.errorHandler = {
+            print("Opps\($0.localizedDescription)")
+        }
+        
         imageSaver.writeToPhotoAlbum(image: processedImage)
     }
     func applyProcessing() {
